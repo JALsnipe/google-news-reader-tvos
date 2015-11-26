@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         let networkManager = NetworkManager()
         
-        networkManager.promiseOfArticleData().then { (data) -> Promise<NSData>? in
+        networkManager.promiseOfArticleData()?.then { (data) -> Promise<NSData>? in
             print(data)
             return nil
         }.error { (error) -> Void in

@@ -11,7 +11,7 @@ import PromiseKit
 
 class NetworkManager: NSObject {
     
-    func promiseOfArticleData() -> Promise<NSData> {
+    func promiseOfArticleData() -> Promise<NSData>? {
         
         return NSURLSession.GET(kGoogleNewsRSSURL)
     }
